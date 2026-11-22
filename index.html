@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сильные Руки — разнорабочие и грузчики в Севастополе от 500 ₽/час</title>
+<title>Сильные Руки — разнорабочие в Севастополе · смена от 4950 ₽</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -35,32 +35,28 @@ button{font-family:inherit;cursor:pointer}
 .cring.hov{width:60px;height:60px}
 @media(pointer:coarse){.cdot,.cring{display:none}}
 .progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--y),var(--y2));z-index:500}
-header{position:fixed;top:0;left:0;width:100%;z-index:300;background:linear-gradient(180deg,rgba(11,11,14,.85),rgba(11,11,14,0));transition:background .35s,box-shadow .35s}
-header.scr{background:rgba(11,11,14,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 10px 40px rgba(0,0,0,.4);border-bottom:1px solid var(--bd)}
-.header-in{max-width:1300px;margin:0 auto;padding:0 5%;height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-header.scr .header-in{height:64px}
-.header-in{transition:height .35s}
-.logo{font-family:'Unbounded';font-weight:800;font-size:18px;line-height:1;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:10px;white-space:nowrap;flex-shrink:0}
+header{position:fixed;top:0;left:0;width:100%;z-index:300;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;transition:.4s}
+header.scr{background:rgba(11,11,14,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:12px 5%;box-shadow:0 10px 40px rgba(0,0,0,.4);border-bottom:1px solid var(--bd)}
+.logo{font-family:'Unbounded';font-weight:800;font-size:19px;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:12px}
 .logo span{color:var(--y)}
-.logo-tag{font-family:'Manrope';font-style:normal;font-size:10px;font-weight:800;letter-spacing:1.5px;line-height:1;color:#111;background:var(--y);padding:5px 9px;border-radius:6px}
-nav.dsk{display:flex;align-items:center;gap:6px}
-nav.dsk a{padding:8px 12px;font-size:14.5px;font-weight:600;color:var(--mu);border-radius:100px;position:relative;transition:color .25s,background .25s;white-space:nowrap}
-nav.dsk a:hover{color:var(--tx);background:rgba(255,255,255,.06)}
-.hphone{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;line-height:1;padding:12px 20px;border:1px solid var(--bd);border-radius:100px;transition:.25s;white-space:nowrap;flex-shrink:0}
-.hphone:hover{border-color:var(--y);color:var(--y);background:rgba(255,212,0,.06)}
-.burger{display:none;background:rgba(255,255,255,.06);border:1px solid var(--bd);border-radius:12px;z-index:400;width:44px;height:44px;position:relative;flex-shrink:0}
-.burger span{position:absolute;left:10px;width:22px;height:2px;background:var(--tx);border-radius:2px;transition:.35s}
-.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
-.burger.open span:nth-child(1){top:21px;transform:rotate(45deg)}
+.logo-tag{font-family:'Manrope';font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:2px;color:#111;background:var(--y);padding:4px 10px;border-radius:6px;transform:rotate(-2deg)}
+nav.dsk a{margin-left:30px;font-size:15px;font-weight:600;color:var(--mu);position:relative;transition:color .3s}
+nav.dsk a::after{content:'';position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--y);transition:width .3s}
+nav.dsk a:hover{color:var(--tx)}
+nav.dsk a:hover::after{width:100%}
+.hphone{font-weight:800;font-size:16px;padding:10px 20px;border:1px solid var(--bd);border-radius:100px;transition:.3s}
+.hphone:hover{border-color:var(--y);color:var(--y)}
+.burger{display:none;background:none;border:none;z-index:400;width:40px;height:40px;position:relative}
+.burger span{position:absolute;left:8px;width:24px;height:2px;background:var(--tx);transition:.35s}
+.burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:20px}.burger span:nth-child(3){top:26px}
+.burger.open span:nth-child(1){top:20px;transform:rotate(45deg)}
 .burger.open span:nth-child(2){opacity:0}
-.burger.open span:nth-child(3){top:21px;transform:rotate(-45deg)}
+.burger.open span:nth-child(3){top:20px;transform:rotate(-45deg)}
 .mmenu{position:fixed;inset:0;z-index:350;background:rgba(11,11,14,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;clip-path:circle(0% at calc(100% - 45px) 40px);transition:clip-path .6s cubic-bezier(.76,0,.24,1)}
 .mmenu.open{clip-path:circle(150% at calc(100% - 45px) 40px)}
 .mmenu a{font-family:'Unbounded';font-size:24px;font-weight:600}
 .mmenu a:hover{color:var(--y)}
-.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:150px 5% 150px}
-.hphone-note{font-size:11px;font-weight:700;color:var(--ok,#4ade80);letter-spacing:.2px}
-.hphone{flex-direction:column;gap:2px;align-items:center;justify-content:center;padding:9px 18px}
+.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:140px 5% 150px}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:blob 14s ease-in-out infinite alternate}
 .blob.b1{width:520px;height:520px;background:#ffd40026;top:-120px;right:-80px}
 .blob.b2{width:420px;height:420px;background:#4d7cfe1e;bottom:-100px;left:-100px;animation-delay:-6s}
@@ -113,9 +109,6 @@ nav.dsk a:hover{color:var(--tx);background:rgba(255,255,255,.06)}
 .fcard .fic{width:46px;height:46px;border-radius:14px;font-size:22px;display:flex;align-items:center;justify-content:center;background:rgba(255,212,0,.13)}
 .fcard b{display:block;font-size:15px}
 .fcard small{color:var(--mu);font-size:12.5px}
-.fcards-row{display:contents}
-.hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-@media(max-width:640px){.hero-badges{justify-content:center}}
 .fc1{top:30px;left:-50px}
 .fc2{bottom:60px;right:-35px;animation-delay:-2.5s}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
@@ -178,10 +171,6 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .rrow .hout{font-family:'Unbounded';font-size:20px;min-width:82px;text-align:right;color:var(--y2)}
 .mnote{font-size:13px;color:var(--mu);margin-top:10px}
 .mnote b{color:var(--y2)}
-.fbtns{display:flex;gap:8px;flex-wrap:wrap}
-.fbtn{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--bd);background:var(--bg2);color:var(--mu);font-weight:700;font-size:15px;transition:.25s}
-.fbtn:hover{border-color:rgba(255,212,0,.5);color:var(--tx)}
-.fbtn.active{background:rgba(255,212,0,.13);border-color:var(--y);color:var(--y2)}
 .chips{display:flex;flex-direction:column;gap:10px}
 .chip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:16px;font-weight:600;font-size:15px;background:var(--bg2);border:1.5px solid var(--bd);color:var(--mu);transition:.3s;cursor:pointer;user-select:none}
 .chip:hover{border-color:rgba(255,212,0,.4);color:var(--tx)}
@@ -270,44 +259,13 @@ footer{border-top:1px solid var(--bd);padding:44px 5%;display:flex;justify-conte
 .fchip{position:fixed;left:14px;bottom:14px;z-index:290;display:none;align-items:center;gap:8px;background:rgba(16,16,21,.92);backdrop-filter:blur(10px);border:1px solid rgba(255,212,0,.3);border-radius:100px;padding:8px 16px;font-size:12px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.5)}
 .fchip b{color:var(--y);font-family:'Unbounded';font-size:13px}
 @media(max-width:1099px){.fchip{display:flex}}
-@media(min-width:900px){.fplate{bottom:28px;top:auto;left:5%;right:auto}}
 .lift-hint{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:10px 20px;border:1px dashed rgba(255,212,0,.35);border-radius:100px;font-size:13.5px;font-weight:700;color:var(--y2);opacity:0;animation:fup .9s 1s forwards;flex-basis:100%}
 .lift-hint .arr{animation:hintDn 1.6s ease-in-out infinite;display:inline-block}
 @keyframes hintDn{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
-@media(max-width:1020px){.hgrid{grid-template-columns:1fr}.hvisual{max-width:480px;margin:28px auto 0;display:flex;flex-direction:column;align-items:center;gap:16px}.hvisual .cube-wrap{flex:none}.fcards-row{display:flex;flex-direction:column;gap:10px;width:100%;max-width:430px}.fcard{position:relative;inset:auto;animation:none;width:100%;padding:13px 16px;border-radius:16px}.fcard .fic{width:40px;height:40px;border-radius:12px;font-size:19px}.fcard b{font-size:14px}.fcard small{font-size:12px}.sgrid{grid-template-columns:repeat(2,1fr)}.stgrid{grid-template-columns:repeat(2,1fr)}.calcbox{grid-template-columns:1fr;padding:32px 24px}.ogrid{grid-template-columns:1fr;gap:40px}}
-@media(max-width:900px){
-nav.dsk{display:none}
-.burger{display:block}
-.hphone{padding:10px 14px;font-size:13.5px}
-.header-in{height:64px;padding:0 16px;gap:12px}
-header.scr .header-in{height:58px}
-.logo{font-size:16px}
-.logo-tag{display:none}
-.cube-wrap{order:-1;max-width:230px}
-.fcards-row{max-width:100%}
-.hero{padding:104px 5% 120px;min-height:auto}
-.hbadge{font-size:12.5px;padding:8px 14px;margin-bottom:20px}
-.hsub{font-size:15.5px;margin:18px 0 26px}
-.hcta{gap:10px}
-.hcta .btn{padding:15px 24px;font-size:14.5px;flex:1;justify-content:center}
-.hstats{margin-top:32px;gap:26px}
-.fplate{top:72px;right:12px;padding:5px 12px;transform:none}
-.fplate .fn{font-size:12px}
-.fplate .fname{font-size:8.5px}
-}
-@media(max-width:640px){
-.hphone{display:none}
-.sgrid,.stgrid{grid-template-columns:1fr}
-section{padding:80px 5%}
-.rcard{width:300px}
-.cube-wrap{max-width:300px}
-footer{justify-content:center;text-align:center}
-.hstats b{font-size:21px}
-.hstats small{font-size:12px}
-}
+@media(max-width:1020px){.hgrid{grid-template-columns:1fr}.hvisual{max-width:480px;margin:30px auto 0}.fc1{left:-14px}.fc2{right:-10px}.sgrid{grid-template-columns:repeat(2,1fr)}.stgrid{grid-template-columns:repeat(2,1fr)}.calcbox{grid-template-columns:1fr;padding:32px 24px}.ogrid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:640px){nav.dsk,.hphone{display:none}.burger{display:block}.logo-tag{display:none}.sgrid,.stgrid{grid-template-columns:1fr}section{padding:80px 5%}.rcard{width:300px}.cube-wrap{max-width:300px}footer{justify-content:center;text-align:center}.fplate{top:74px;padding:6px 16px}.fplate .fn{font-size:13px}.fplate .fname{font-size:9px}}
 </style>
 </head>
-
 <body>
 <script>setTimeout(function(){var p=document.getElementById('preloader');if(p)p.classList.add('done')},3500);</script>
 <div class="progress" id="progress"></div>
@@ -315,24 +273,21 @@ footer{justify-content:center;text-align:center}
 <div class="cring" id="cring"></div>
 <div class="preloader" id="preloader"><div class="pl-logo">Сильные <span>Руки</span></div><div class="pl-bar"><div class="pl-fill" id="plFill"></div></div><div class="pl-num" id="plNum">0%</div></div>
 <header id="header">
-<div class="header-in">
-<a href="#" class="logo">Сильные<span>Руки</span><i class="logo-tag">СЕВАСТОПОЛЬ</i></a>
-<nav class="dsk"><a href="#services">Услуги</a><a href="#steps">Как работаем</a><a href="#calculator">Калькулятор</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
-<a class="hphone" href="tel:+79789759489"><span>📞 +7 (978) 975-94-89</span><small class="hphone-note">звонок или Max</small></a>
+<a href="#" class="logo">Сильные<span>Руки</span> <i class="logo-tag">СЕВАСТОПОЛЬ</i></a>
+<nav class="dsk"><a href="#services">Направления</a><a href="#steps">Как работаем</a><a href="#calculator">Калькулятор</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+<a class="hphone" href="tel:+79789759489">+7 (978) 975-94-89</a>
 <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
-</div>
 </header>
-<div class="mmenu" id="mmenu"><a href="#services">Услуги</a><a href="#steps">Как работаем</a><a href="#calculator">Калькулятор</a><a href="#reviews">Отзывы</a><a href="#order">Заказать</a></div>
+<div class="mmenu" id="mmenu"><a href="#services">Направления</a><a href="#steps">Как работаем</a><a href="#calculator">Калькулятор</a><a href="#reviews">Отзывы</a><a href="#order">Заказать</a></div>
 <section class="hero">
 <div class="blob b1"></div><div class="blob b2"></div>
 <div class="hgrid">
 <div>
-<div class="hbadge"><span class="pulse"></span> Приедем за 60 минут по Севастополю</div>
-<h1><span class="line"><span>Сильные <span class="accent">руки</span></span></span><span class="line"><span>в Севастополе</span></span><span class="line"><span>от 500 ₽/час</span></span></h1>
-<p class="hsub">Разнорабочие, грузчики и услуги погрузчика. Переезды, погрузка, вывоз мусора. <b>Минимальный заказ — всего 2 часа.</b></p>
+<div class="hbadge"><span class="pulse"></span> Выведем бригаду уже завтра к 8:00</div>
+<h1><span class="line"><span>Разнорабочие</span></span><span class="line"><span>в Севастополе</span></span><span class="line"><span>от <span class="accent">4950 ₽</span> за смену</span></span></h1>
+<p class="hsub">Подсобники и разнорабочие на стройку: демонтаж, электромонтаж, помощь каменщикам, дорожные работы. <b>Смена — с 8:00 до 17:00 или до 18:00.</b> Работаем <b>по договору</b>.</p>
 <div class="hcta"><a href="#calculator" class="btn magn">Рассчитать стоимость ↓</a><a href="#order" class="btn ghost">Оставить заявку</a></div>
-<div class="hero-badges"><span class="hbadge" style="margin-bottom:0;font-size:12.5px;padding:7px 14px;animation:none"><span class="pulse"></span> Работаем по договору</span><span class="hbadge" style="margin-bottom:0;font-size:12.5px;padding:7px 14px;animation:none">✅ Без предоплаты</span></div>
-<div class="hstats"><div><b data-count="5">0</b><small>лет на рынке</small></div><div><b><span data-count="1200">0</span>+</b><small>выполненных заказов</small></div><div><b><span data-count="60">0</span> мин</b><small>подача бригады</small></div></div>
+<div class="hstats"><div><b data-count="5">0</b><small>лет на рынке</small></div><div><b><span data-count="1200">0</span>+</b><small>выполненных заказов</small></div><div><b><span data-count="30">0</span>+</b><small>проверенных разнорабочих</small></div></div>
 </div>
 <div class="hvisual">
 <div class="cube-wrap" id="heroImg">
@@ -340,24 +295,22 @@ footer{justify-content:center;text-align:center}
 <div class="cube"><div class="cube-shine"></div><span class="fist">💪</span><div class="hazard"></div></div>
 <span class="cspark s1">✦</span><span class="cspark s2">✦</span><span class="cspark s3">✦</span>
 </div>
-<div class="fcards-row">
-<div class="fcard fc1"><div class="fic">💪</div><div><b>Разнорабочие — 500 ₽/ч</b><small>минимум 2 часа</small></div></div>
-<div class="fcard fc2"><div class="fic">🚜</div><div><b>Погрузчик — 800 ₽/ч</b><small>с опытным машинистом</small></div></div>
+<div class="fcard fc1"><div class="fic">💵</div><div><b>Наличные — 5000 ₽/смена</b><small>за человека</small></div></div>
+<div class="fcard fc2"><div class="fic">💳</div><div><b>Безнал — 4950 ₽/смена</b><small>без НДС, по договору</small></div></div>
 </div>
 </div>
-</div>
-<div class="hbottom"><div class="hazard"></div><div class="marquee"><div class="mtrack" id="mtrack"><span>Разнорабочие</span><span>Грузчики</span><span>Погрузчик 800 ₽/ч</span><span>Переезды</span><span>Вывоз мусора</span><span>От 500 ₽/час</span><span>Минимум 2 часа</span><span>Работаем по договору</span></div></div></div>
+<div class="hbottom"><div class="hazard"></div><div class="marquee"><div class="mtrack" id="mtrack"><span>Разнорабочие</span><span>Демонтаж</span><span>Электромонтаж</span><span>Помощники каменщиков</span><span>Дорожные работы</span><span>Подсобники на стройку</span><span>Смена от 4950 ₽</span><span>По договору</span></div></div></div>
 </section>
 <section id="services">
 <div class="wrap">
-<div class="shead"><div class="stag rv">Услуги</div><h2 class="stitle rv d1">Что мы <span class="accent">умеем</span></h2><p class="ssub rv d2">Подберём людей и технику под любую задачу — от пары коробок до переезда целого склада.</p></div>
+<div class="shead"><div class="stag rv">Направления</div><h2 class="stitle rv d1">Кого <span class="accent">предоставляем</span></h2><p class="ssub rv d2">Только разнорабочие и подсобники — по всем направлениям строительства. Люди проверенные, с опытом.</p></div>
 <div class="sgrid">
-<div class="scard rv"><span class="snum">01</span><div class="sic">💪</div><h3>Разнорабочие</h3><p>Любые подсобные работы: переноска, уборка, копка, помощь на объекте. Крепкие ребята с опытом.</p><span class="sprice">500 ₽/час · безнал 600 ₽/час</span></div>
-<div class="scard rv d1"><span class="snum">02</span><div class="sic">🚜</div><h3>Услуги погрузчика</h3><p>Погрузчик с машинистом для стройплощадок, складов и частных участков. Быстро и аккуратно.</p><span class="sprice">800 ₽/час</span></div>
-<div class="scard rv d2"><span class="snum">03</span><div class="sic">🏠</div><h3>Квартирный переезд</h3><p>Упакуем, вынесем, погрузим и расставим на новом месте. Мебель, техника, личные вещи.</p><span class="sprice">от 500 ₽/час</span></div>
-<div class="scard rv"><span class="snum">04</span><div class="sic">📦</div><h3>Погрузка / разгрузка</h3><p>Фуры, контейнеры, газели. Паллеты, короба, нестандартный груз — справимся с любым объёмом.</p><span class="sprice">от 500 ₽/час</span></div>
-<div class="scard rv d1"><span class="snum">05</span><div class="sic">🏗️</div><h3>Вывоз мусора</h3><p>Строительный и бытовой мусор, старая мебель и сантехника. Вынесем с любого этажа.</p><span class="sprice">от 500 ₽/час</span></div>
-<div class="scard rv d2"><span class="snum">06</span><div class="sic">🏢</div><h3>Офисный переезд</h3><p>Переезд офиса за один день: оргтехника, документы, мебель. Работаем в выходные.</p><span class="sprice">от 500 ₽/час</span></div>
+<div class="scard rv"><span class="snum">01</span><div class="sic">🔨</div><h3>Демонтажные работы</h3><p>Снос перегородок, снятие покрытий, разбор конструкций. Аккуратно, с выносом мусора.</p><span class="sprice">4950–5000 ₽/смена</span></div>
+<div class="scard rv d1"><span class="snum">02</span><div class="sic">🏗️</div><h3>Подсобники на стройку</h3><p>Переноска материалов, замес, подача, уборка — любая помощь мастерам на объекте.</p><span class="sprice">4950–5000 ₽/смена</span></div>
+<div class="scard rv d2"><span class="snum">03</span><div class="sic">⚡</div><h3>Помощь при электромонтаже</h3><p>Разнорабочие в помощь электромонтажникам: штробление, протяжка кабеля, подноска материалов.</p><span class="sprice">4950–5000 ₽/смена</span></div>
+<div class="scard rv"><span class="snum">04</span><div class="sic">🧱</div><h3>Помощники каменщиков</h3><p>Подача раствора и блоков, подготовка материалов, поддержание порядка на участке работ.</p><span class="sprice">4950–5000 ₽/смена</span></div>
+<div class="scard rv d1"><span class="snum">05</span><div class="sic">🚧</div><h3>Дорожные работы</h3><p>Разнорабочие на укладку асфальта, бордюров, плитки и благоустройство территорий.</p><span class="sprice">4950–5000 ₽/смена</span></div>
+<div class="scard rv d2"><span class="snum">06</span><div class="sic">🧹</div><h3>Уборка и вывоз мусора</h3><p>Уборка объекта, погрузка и вынос строительного мусора во время и после работ.</p><span class="sprice">4950–5000 ₽/смена</span></div>
 </div>
 </div>
 </section>
@@ -366,28 +319,26 @@ footer{justify-content:center;text-align:center}
 <div class="shead"><div class="stag rv">Процесс</div><h2 class="stitle rv d1">Как мы <span class="accent">работаем</span></h2></div>
 <div class="stgrid">
 <div class="stcard rv"><div class="stnum">01</div><h3>Заявка</h3><p>Оставляете заявку на сайте — она мгновенно прилетает нам в Max. Отвечаем за 10 минут.</p></div>
-<div class="stcard rv d1"><div class="stnum">02</div><h3>Расчёт и договор</h3><p>Уточняем детали и фиксируем цену в договоре — она не изменится в процессе работы.</p></div>
-<div class="stcard rv d2"><div class="stnum">03</div><h3>Приезд бригады</h3><p>Бригада приезжает точно в срок со всем необходимым: ремни, тележки, инструмент.</p></div>
-<div class="stcard rv d3"><div class="stnum">04</div><h3>Работа и оплата</h3><p>Вы принимаете результат и оплачиваете. Наличные или безнал — как удобно.</p></div>
+<div class="stcard rv d1"><div class="stnum">02</div><h3>Расчёт и договор</h3><p>Уточняем задачи и фиксируем цену за смену в договоре — она не изменится в процессе.</p></div>
+<div class="stcard rv d2"><div class="stnum">03</div><h3>Выход бригады</h3><p>Разнорабочие выходят на объект к 8:00. Если человек не подошёл — заменим в тот же день.</p></div>
+<div class="stcard rv d3"><div class="stnum">04</div><h3>Работа и оплата</h3><p>Смена до 17:00 или 18:00. Оплата по итогу: наличные или безнал с документами.</p></div>
 </div>
 </div>
 </section>
 <section id="calculator">
 <div class="wrap">
-<div class="shead"><div class="stag rv">Калькулятор</div><h2 class="stitle rv d1">Цена за <span class="accent">30 секунд</span></h2><p class="ssub rv d2">Выберите, кто нужен, и двигайте ползунки — стоимость пересчитается мгновенно.</p></div>
+<div class="shead"><div class="stag rv">Калькулятор</div><h2 class="stitle rv d1">Цена за <span class="accent">30 секунд</span></h2><p class="ssub rv d2">Выберите оплату, количество людей и смен — стоимость пересчитается мгновенно.</p></div>
 <div class="calcbox rv">
 <div>
-<div class="cgroup"><span class="clabel">Кто нужен</span><div class="pills"><button class="pill active" id="pillW" onclick="setMode('workers')">💪 Разнорабочие<small>500 ₽/ч нал · 600 ₽/ч безнал</small></button><button class="pill" id="pillL" onclick="setMode('loader')">🚜 Погрузчик<small>800 ₽/час</small></button></div></div>
-<div class="cgroup" id="payGroup"><span class="clabel">Форма оплаты</span><div class="pills"><button class="pill active" id="pillCash" onclick="setPay('cash')">💵 Наличные — 500 ₽/ч</button><button class="pill" id="pillCard" onclick="setPay('card')">💳 Безнал — 600 ₽/ч</button></div></div>
-<div class="cgroup"><span class="clabel" id="countLabel">Количество человек</span><div class="stepper"><button onclick="stepCount(-1)" aria-label="Меньше">−</button><div class="val" id="countVal">2</div><button onclick="stepCount(1)" aria-label="Больше">+</button></div></div>
-<div class="cgroup"><span class="clabel">Часов работы</span><div class="rrow"><input type="range" id="hoursRange" min="2" max="12" value="2" step="1"><div class="hout" id="hoursOut">2 ч</div></div><div class="mnote">Минимальный заказ — <b>2 часа</b></div></div>
-<div class="cgroup" id="floorGroup"><span class="clabel">Этаж без лифта</span><div class="fbtns" id="floorBtns"></div></div>
-<div class="cgroup" style="margin-bottom:0"><span class="clabel">Дополнительно</span><div class="chips" id="optionChips"></div></div>
+<div class="cgroup"><span class="clabel">Форма оплаты</span><div class="pills"><button class="pill active" id="pillCash" onclick="setPay('cash')">💵 Наличные<small>5000 ₽ за смену</small></button><button class="pill" id="pillCard" onclick="setPay('card')">💳 Безнал<small>4950 ₽ за смену · без НДС</small></button></div></div>
+<div class="cgroup"><span class="clabel" id="countLabel">Количество разнорабочих</span><div class="stepper"><button onclick="stepCount(-1)" aria-label="Меньше">−</button><div class="val" id="countVal">2</div><button onclick="stepCount(1)" aria-label="Больше">+</button></div></div>
+<div class="cgroup"><span class="clabel">Количество смен (дней)</span><div class="rrow"><input type="range" id="daysRange" min="1" max="30" value="1" step="1"><div class="hout" id="daysOut">1 день</div></div><div class="mnote">Смена — <b>с 8:00 до 17:00 или до 18:00</b>. Минимальный заказ — 1 смена</div></div>
+<div class="cgroup" style="margin-bottom:0"><span class="clabel">Направление работ</span><div class="chips" id="dirChips"></div></div>
 </div>
 <div class="cresult">
 <h3>Ваш расчёт</h3>
 <div class="rlines" id="details"></div>
-<div class="tblock"><div class="tsum" id="totalSum">0 ₽</div><div class="tnote">Предварительный расчёт. Точную цену подтвердит менеджер в Max.</div></div>
+<div class="tblock"><div class="tsum" id="totalSum">0 ₽</div><div class="tnote">Предварительный расчёт. Точную цену зафиксируем в договоре.</div></div>
 <button class="btn" onclick="fillOrder()">Оформить заказ →</button>
 </div>
 </div>
@@ -401,12 +352,12 @@ footer{justify-content:center;text-align:center}
 <div class="wrap">
 <div class="shead" style="text-align:center"><div class="stag rv">FAQ</div><h2 class="stitle rv d1">Частые <span class="accent">вопросы</span></h2></div>
 <div class="flist">
-<div class="fitem rv"><button class="fq">Работаете ли по договору?<span class="ficon">+</span></button><div class="fa"><p>Да, все работы выполняем по договору с фиксированной ценой и сроками. Для юридических лиц и ИП предоставляем полный комплект закрывающих документов.</p></div></div>
-<div class="fitem rv d1"><button class="fq">Что такое минимальный заказ?<span class="ficon">+</span></button><div class="fa"><p>Минимальный заказ — 2 часа работы. Если задача займёт меньше времени, стоимость всё равно считается как за 2 часа.</p></div></div>
-<div class="fitem rv d2"><button class="fq">Сколько стоит и как платить?<span class="ficon">+</span></button><div class="fa"><p>Разнорабочий — 500 ₽/час при оплате наличными и 600 ₽/час по безналу. Погрузчик с машинистом — 800 ₽/час. Оплата после выполнения работы.</p></div></div>
-<div class="fitem rv d3"><button class="fq">Как быстро приедут?<span class="ficon">+</span></button><div class="fa"><p>В пределах Севастополя подаём бригаду за 60–90 минут после подтверждения заказа. В Балаклаву, Инкерман и Качу — от 2 часов.</p></div></div>
-<div class="fitem rv d4"><button class="fq">Несёте ли ответственность за вещи?<span class="ficon">+</span></button><div class="fa"><p>Да, по договору мы несём полную материальную ответственность за сохранность имущества с начала погрузки до окончания разгрузки.</p></div></div>
-<div class="fitem rv d4"><button class="fq">Работаете ли вечером и в выходные?<span class="ficon">+</span></button><div class="fa"><p>Да, работаем ежедневно. Вечерние и выходные заказы возможны — время и цену согласуем заранее в Max.</p></div></div>
+<div class="fitem rv"><button class="fq">Работаете ли по договору?<span class="ficon">+</span></button><div class="fa"><p>Да, все работы выполняем по договору с фиксированной ценой за смену. Для юридических лиц и ИП — безналичный расчёт без НДС и полный комплект закрывающих документов.</p></div></div>
+<div class="fitem rv d1"><button class="fq">Сколько стоит и как платить?<span class="ficon">+</span></button><div class="fa"><p>Смена одного разнорабочего — 5000 ₽ при оплате наличными и 4950 ₽ по безналу (без НДС). Оплата по итогу смены или по акту выполненных работ.</p></div></div>
+<div class="fitem rv d2"><button class="fq">Что входит в рабочую смену?<span class="ficon">+</span></button><div class="fa"><p>Полный рабочий день: с 8:00 до 17:00 или с 8:00 до 18:00 — как договоримся. Перерыв на обед входит в смену. Минимальный заказ — одна смена.</p></div></div>
+<div class="fitem rv d3"><button class="fq">Как быстро выйдут люди?<span class="ficon">+</span></button><div class="fa"><p>Обычно бригада выходит уже на следующее утро к 8:00. При срочной заявке возможен выход в день обращения по Севастополю и району.</p></div></div>
+<div class="fitem rv d4"><button class="fq">Что если разнорабочий не подошёл?<span class="ficon">+</span></button><div class="fa"><p>Заменим его в тот же день бесплатно. Все люди проверенные, но если что-то не устроило — просто скажите бригадиру.</p></div></div>
+<div class="fitem rv d4"><button class="fq">Работаете ли в выходные?<span class="ficon">+</span></button><div class="fa"><p>Да, работаем ежедневно, включая выходные. Условия те же — цена за смену не меняется.</p></div></div>
 </div>
 </div>
 </section>
@@ -417,7 +368,7 @@ footer{justify-content:center;text-align:center}
 <div class="stag rv">Заявка</div>
 <h2 class="rv d1">Оставьте заявку — <span class="accent">ответим в Max за 10 минут</span></h2>
 <p class="rv d2">Заявка с сайта мгновенно прилетает нам в Max — ни одна не потеряется. Или просто позвоните.</p>
-<div class="ochecks rv d3"><div><span class="ok">✓</span> Работаем официально, по договору</div><div><span class="ok">✓</span> Цена фиксируется до начала работ</div><div><span class="ok">✓</span> Без предоплаты и скрытых доплат</div><div><span class="ok">✓</span> Наличные или безнал — как удобно</div></div>
+<div class="ochecks rv d3"><div><span class="ok">✓</span> Работаем официально, по договору</div><div><span class="ok">✓</span> Цена за смену фиксируется до выхода бригады</div><div><span class="ok">✓</span> Замена разнорабочего в день обращения</div><div><span class="ok">✓</span> Наличные или безнал с документами</div></div>
 <a href="tel:+79789759489" class="opbig rv d4">📞 +7 (978) 975-94-89</a>
 </div>
 <form class="oform rv d2" id="orderForm" onsubmit="sendOrder(event)">
@@ -437,126 +388,192 @@ footer{justify-content:center;text-align:center}
 <div class="hazard"></div>
 <footer>
 <div class="logo">Сильные<span>Руки</span></div>
-<div>© 2025 · Разнорабочие и грузчики в Севастополе · Работаем по договору, ежедневно</div>
+<div>© 2025 · Разнорабочие в Севастополе · По договору · Смена от 4950 ₽</div>
 <a href="tel:+79789759489" style="color:var(--y2);font-weight:700">+7 (978) 975-94-89</a>
 </footer>
 <a class="mfloat" id="maxFloat" href="#" aria-label="Написать в Max"><svg width="32" height="32" viewBox="0 0 32 32"><path d="M7 19.5c2.6 3.2 5.5 4.8 9 4.8s6.4-1.6 9-4.8" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round"/><circle cx="11" cy="12.5" r="1.7" fill="#fff"/><circle cx="21" cy="12.5" r="1.7" fill="#fff"/></svg></a>
 <script>
-const CONFIG={
-workerCash:500, workerCard:600, loaderRate:800,
-minHours:2, maxHours:12, maxWorkers:12, floorPrice:100,
-options:{
-packing:{name:'Упаковка вещей',price:1500},
-assembly:{name:'Разборка/сборка мебели',price:1000},
-rigging:{name:'Ремни и оборудование',price:500}
-},
-maxBotToken:'', maxChatId:'', maxLink:'https://max.ru/u/79789759489'
+/* ===== НАСТРОЙКИ ===== */
+var CONFIG={
+ shiftCash:5000,   // цена за смену наличными
+ shiftCard:4950,   // цена за смену безнал (без НДС)
+ maxDays:30,       // максимум смен в калькуляторе
+ maxWorkers:30,    // максимум разнорабочих
+ maxBotToken:'',   // ← ВСТАВЬ ТОКЕН БОТА MAX (между кавычками)
+ maxChatId:'',     // ← ВСТАВЬ CHAT_ID (между кавычками)
+ maxLink:'https://max.ru/u/79789759489' // ← ссылка на твой Max
 };
-(function(){const fill=document.getElementById('plFill'),num=document.getElementById('plNum');let p=0;const t=setInterval(()=>{p=Math.min(100,p+Math.random()*14+4);fill.style.width=p+'%';num.textContent=Math.round(p)+'%';if(p>=100){clearInterval(t);setTimeout(()=>document.getElementById('preloader').classList.add('done'),250)}},90)})();
-const dot=document.getElementById('cdot'),ring=document.getElementById('cring');let mx=-100,my=-100,rx=-100,ry=-100;
-window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;dot.style.left=mx+'px';dot.style.top=my+'px';ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop)})();
-document.querySelectorAll('a,button,.pill,.chip,.fbtn').forEach(el=>{el.addEventListener('mouseenter',()=>ring.classList.add('hov'));el.addEventListener('mouseleave',()=>ring.classList.remove('hov'))});
-document.querySelectorAll('.magn').forEach(btn=>{btn.addEventListener('mousemove',e=>{const r=btn.getBoundingClientRect();btn.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.25}px)`});btn.addEventListener('mouseleave',()=>btn.style.transform='')});
-const header=document.getElementById('header');
-window.addEventListener('scroll',()=>{header.classList.toggle('scr',scrollY>40);const h=document.documentElement;document.getElementById('progress').style.width=(scrollY/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
-const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
-burger.addEventListener('click',()=>{burger.classList.toggle('open');mmenu.classList.toggle('open')});
-mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mmenu.classList.remove('open')}));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-const cio=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;const el=en.target,target=+el.dataset.count,t0=performance.now();(function tick(now){const p=Math.min(1,(now-t0)/1600);el.textContent=Math.round(target*(1-Math.pow(1-p,3))).toLocaleString('ru-RU');if(p<1)requestAnimationFrame(tick)})(t0);cio.unobserve(el)}),{threshold:.6});
-document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
-const hero=document.querySelector('.hero'),floats=document.querySelectorAll('.fcard'),heroImg=document.getElementById('heroImg');
-hero.addEventListener('mousemove',e=>{const cx=e.clientX/innerWidth-.5,cy=e.clientY/innerHeight-.5;floats.forEach((f,i)=>{const d=(i+1)*12;f.style.translate=`${cx*d}px ${cy*d}px`});heroImg.style.transform=`translate(${cx*-14}px,${cy*-14}px)`});
-document.querySelectorAll('.scard').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;card.style.setProperty('--mx',x+'px');card.style.setProperty('--my',y+'px');card.style.transform=`perspective(800px) rotateY(${(x/r.width-.5)*8}deg) rotateX(${(y/r.height-.5)*-8}deg) translateY(-4px)`});card.addEventListener('mouseleave',()=>card.style.transform='')});
-const REVIEWS=[
-{name:'Анна К.',tag:'Квартирный переезд',text:'Переезжали с Гагаринского на Центральный. Ребята приехали минута в минуту, всё упаковали, ни одной царапины!'},
-{name:'Дмитрий С.',tag:'Разгрузка фуры',text:'Срочно нужно было разгрузить 20-тонную фуру. Бригада из 4 человек справилась за 3 часа. молодцы!'},
-{name:'Ольга М.',tag:'Вывоз мусора',text:'После ремонта осталась гора мусора на 5 этаже без лифта. Вынесли всё за один вечер, цена как договаривались.'},
-{name:'Игорь П.',tag:'Услуги погрузчика',text:'Заказывал погрузчик на участок — выровняли грунт и разгрузили паллеты с блоками. Машинист — профи.'},
-{name:'Марина В.',tag:'Офисный переезд',text:'Перевезли офис на 15 рабочих мест за одну субботу. В понедельник уже работали на новом месте!'},
-{name:'Сергей Л.',tag:'Разнорабочие',text:'Бригада за день разобрала старый сарай и вынесла весь мусор. Работают быстро и без капризов 😄'}
-];
-document.getElementById('rmq').innerHTML=(REVIEWS.map(r=>`<div class="rcard"><div class="rstars">★★★★★</div><p>«${r.text}»</p><div class="rauthor"><div class="rava">${r.name[0]}</div><div><b>${r.name}</b><small>${r.tag}</small></div></div></div>`).join('')).repeat(2);
-const mt=document.getElementById('mtrack');mt.innerHTML+=mt.innerHTML;
-document.querySelectorAll('.fitem').forEach(item=>{item.querySelector('.fq').addEventListener('click',()=>{const was=item.classList.contains('open');document.querySelectorAll('.fitem').forEach(i=>{i.classList.remove('open');i.querySelector('.fa').style.maxHeight=null});if(!was){item.classList.add('open');const a=item.querySelector('.fa');a.style.maxHeight=a.scrollHeight+'px'}})});
-const state={mode:'workers',pay:'cash',count:2,hours:CONFIG.minHours,floor:0,options:{},total:0};
-const fmt=n=>Math.round(n).toLocaleString('ru-RU')+' ₽';
-function setMode(mode){state.mode=mode;document.getElementById('pillW').classList.toggle('active',mode==='workers');document.getElementById('pillL').classList.toggle('active',mode==='loader');document.getElementById('payGroup').style.display=mode==='workers'?'':'none';document.getElementById('floorGroup').style.display=mode==='workers'?'':'none';document.getElementById('countLabel').textContent=mode==='workers'?'Количество человек':'Количество машин';if(mode==='loader'&&state.count>4){state.count=1;document.getElementById('countVal').textContent=1}calc()}
-function setPay(pay){state.pay=pay;document.getElementById('pillCash').classList.toggle('active',pay==='cash');document.getElementById('pillCard').classList.toggle('active',pay==='card');calc()}
-function stepCount(d){const max=state.mode==='loader'?4:CONFIG.maxWorkers;state.count=Math.min(max,Math.max(1,state.count+d));const el=document.getElementById('countVal');el.textContent=state.count;el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');calc()}
-const floorBox=document.getElementById('floorBtns');
-['Лифт','2','3','4','5','6+'].forEach((label,i)=>{const b=document.createElement('button');b.className='fbtn'+(i===0?' active':'');b.textContent=label;if(i===0)b.style.width='70px';b.onclick=()=>{state.floor=i===0?0:(i===5?6:i+1);floorBox.querySelectorAll('.fbtn').forEach(f=>f.classList.remove('active'));b.classList.add('active');calc()};floorBox.appendChild(b)});
-const chipsBox=document.getElementById('optionChips');
-Object.entries(CONFIG.options).forEach(([key,o])=>{state.options[key]=false;const chip=document.createElement('div');chip.className='chip';chip.innerHTML=`<span style="display:flex;align-items:center;gap:12px"><span class="ccheck">✓</span>${o.name}</span><span class="cprice">+${fmt(o.price)}</span>`;chip.onclick=()=>{state.options[key]=!state.options[key];chip.classList.toggle('active',state.options[key]);calc()};chipsBox.appendChild(chip)});
-const range=document.getElementById('hoursRange'),hoursOut=document.getElementById('hoursOut');
-function syncRange(){state.hours=+range.value;hoursOut.textContent=state.hours+' ч';range.style.setProperty('--fill',((state.hours-CONFIG.minHours)/(CONFIG.maxHours-CONFIG.minHours)*100)+'%');calc()}
-range.addEventListener('input',syncRange);
-let displayedTotal=0;
-function animateTotal(to){const el=document.getElementById('totalSum'),from=displayedTotal,t0=performance.now();displayedTotal=to;(function tick(now){const p=Math.min(1,(now-t0)/500);el.textContent=fmt(from+(to-from)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)})(t0)}
-function calc(){
-const isL=state.mode==='loader';
-const rate=isL?CONFIG.loaderRate:(state.pay==='cash'?CONFIG.workerCash:CONFIG.workerCard);
-const unit=isL?'Погрузчик':(state.pay==='cash'?'Разнорабочие · нал':'Разнорабочие · безнал');
-const work=state.count*state.hours*rate;
-const fl=(!isL&&state.floor>0)?state.floor*CONFIG.floorPrice*state.count:0;
-let lines=[`<div class="rline"><span>${unit}</span><b>${rate} ₽/час</b></div>`,`<div class="rline"><span>${state.count} ${isL?'маш.':'чел.'} × ${state.hours} ч</span><b>${fmt(work)}</b></div>`];
-let total=work;
-if(fl){lines.push(`<div class="rline"><span>Подъём на ${state.floor} эт. без лифта</span><b>${fmt(fl)}</b></div>`);total+=fl}
-Object.entries(state.options).forEach(([key,on])=>{if(on){const o=CONFIG.options[key];lines.push(`<div class="rline"><span>${o.name}</span><b>${fmt(o.price)}</b></div>`);total+=o.price}});
-document.getElementById('details').innerHTML=lines.join('');
-state.total=total;
-state.summary=`${unit}, ${state.count} ${isL?'маш.':'чел.'} × ${state.hours} ч`+(fl?`, ${state.floor} эт. без лифта`:'')+Object.entries(state.options).filter(([,on])=>on).map(([k])=>', '+CONFIG.options[k].name.toLowerCase()).join('')+` — итого ≈ ${fmt(total)}`;
-animateTotal(total);
-}
-async function sendToMax(text){
-if(!CONFIG.maxBotToken||!CONFIG.maxChatId)return false;
-try{const res=await fetch(`https://botapi.max.ru/messages?access_token=${encodeURIComponent(CONFIG.maxBotToken)}&chat_id=${encodeURIComponent(CONFIG.maxChatId)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});return res.ok}catch(e){return false}
-}
-function buildText(){const v=id=>document.getElementById(id).value;return `🔔 Новая заявка с сайта «Сильные Руки»\n\n👤 Имя: ${v('name')}\n📱 Телефон: ${v('phone')}\n📝 Детали: ${v('message')||'—'}`}
-function fillOrder(){document.getElementById('message').value='Расчёт с сайта: '+state.summary;document.getElementById('order').scrollIntoView({behavior:'smooth'})}
-function openMax(){if(navigator.clipboard)navigator.clipboard.writeText(buildText()).catch(()=>{});window.open(CONFIG.maxLink,'_blank')}
-document.getElementById('maxFloat').href=CONFIG.maxLink;
-document.getElementById('maxFloat').target='_blank';
-async function sendOrder(e){
-e.preventDefault();
-const btn=document.getElementById('submitBtn');btn.textContent='Отправляем…';btn.disabled=true;
-const ok=await sendToMax(buildText());
-document.getElementById('formFields').style.display='none';
-document.getElementById('formOk').classList.add('show');
-if(!ok){document.getElementById('okText').textContent='Сейчас откроется Max — текст заявки уже скопирован, просто вставьте его в чат.';setTimeout(openMax,900)}
-}
-syncRange();
+/* ===== хелперы ===== */
+function fmt(n){return n.toLocaleString('ru-RU')+' ₽';}
+function plural(n,f){var a=n%10,b=n%100;if(a===1&&b!==11)return f[0];if(a>=2&&a<=4&&(b<10||b>=20))return f[1];return f[2];}
+/* ===== прелоадер ===== */
+(function(){var fill=document.getElementById('plFill'),num=document.getElementById('plNum'),p=0;
+var t=setInterval(function(){p=Math.min(100,p+Math.random()*14);fill.style.width=p+'%';num.textContent=Math.floor(p)+'%';
+if(p>=100){clearInterval(t);setTimeout(function(){document.getElementById('preloader').classList.add('done')},300);}},120);})();
+/* ===== курсор + магнит ===== */
+(function(){var dot=document.getElementById('cdot'),ring=document.getElementById('cring');
+if(!window.matchMedia('(pointer:fine)').matches){dot.style.display='none';ring.style.display='none';return;}
+var mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.14;ry+=(my-ry)*.14;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.addEventListener('mouseover',function(e){ring.classList.toggle('hov',!!e.target.closest('a,button,.scard,.pill,.chip,.fq,input,textarea'));});
+document.querySelectorAll('.magn').forEach(function(b){
+b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.25)+'px)';});
+b.addEventListener('mouseleave',function(){b.style.transform='';});});})();
+/* ===== шапка / прогресс / бургер ===== */
+var header=document.getElementById('header'),progress=document.getElementById('progress');
+window.addEventListener('scroll',function(){header.classList.toggle('scr',window.scrollY>40);
+var h=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(h>0?window.scrollY/h*100:0)+'%';},{passive:true});
+var burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+burger.onclick=function(){burger.classList.toggle('open');burger.classList.toggle('x');mmenu.classList.toggle('open');};
+mmenu.querySelectorAll('a').forEach(function(a){a.onclick=function(){burger.classList.remove('open');burger.classList.remove('x');mmenu.classList.remove('open');};});
+/* ===== reveal + счётчики ===== */
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);
+var el=en.target;el.classList.add('in');el.classList.add('vis');el.style.opacity='1';el.style.transform='translateY(0)';});},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+var cio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;cio.unobserve(en.target);
+var el=en.target,t=+el.getAttribute('data-count'),st=null;
+function step(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/1600),e=1-Math.pow(1-p,3);
+el.textContent=Math.floor(t*e).toLocaleString('ru-RU');if(p<1)requestAnimationFrame(step);else el.textContent=t.toLocaleString('ru-RU');}
+requestAnimationFrame(step);});},{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+/* ===== параллакс hero + 3D карточки ===== */
+(function(){var hero=document.querySelector('.hero'),heroImg=document.getElementById('heroImg');
+if(hero)hero.addEventListener('mousemove',function(e){var cx=e.clientX/window.innerWidth-.5,cy=e.clientY/window.innerHeight-.5;
+if(heroImg)heroImg.style.transform='translate('+(cx*-14)+'px,'+(cy*-14)+'px)';
+document.querySelectorAll('.fcard').forEach(function(f,i){var k=(i+1)*12;f.style.transform='translate('+(cx*k)+'px,'+(cy*k)+'px)';});});
+document.querySelectorAll('.scard').forEach(function(card){
+card.addEventListener('mousemove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+card.style.setProperty('--mx',(x*100)+'%');card.style.setProperty('--my',(y*100)+'%');
+card.style.transform='perspective(900px) rotateX('+((.5-y)*8)+'deg) rotateY('+((x-.5)*8)+'deg) translateY(-4px)';});
+card.addEventListener('mouseleave',function(){card.style.transform='';});});})();
+/* ===== отзывы ===== */
 (function(){
-const F=[['.hero',7,'Крыша'],['#services',6,'Услуги'],['#steps',5,'Процесс'],['#calculator',4,'Расчёт'],['#reviews',3,'Отзывы'],['#faq',2,'Вопросы'],['#order',1,'Заявка']];
-const lift=document.createElement('div');lift.className='lift';
-lift.innerHTML='<div class="lift-top"><div class="lift-arr" id="lUp">▲</div><div class="lift-display" id="lDisp" title="Наверх ↑"><span id="lNum">7</span></div><div class="lift-arr" id="lDn">▼</div></div><div class="lift-name" id="lName">Крыша</div><div class="lift-shaft"><div class="lift-cab" id="lCab"></div></div><div class="lift-btns">'+F.map(f=>'<button class="lift-b" data-sel="'+f[0]+'" title="'+f[2]+'">'+f[1]+'</button>').join('')+'</div>';
+var REVIEWS=[
+{n:'Анна К.',t:'Строим дом в Инкермане. Ребята помогали каменщикам — подача раствора, блоки. Работали без напоминаний, смена пролетела.',tag:'Помощники каменщиков',s:5},
+{n:'Дмитрий С.',t:'Нужен был демонтаж старой перегородки и вынос мусора. Утром вышли двое, к вечеру всё было чисто. По договору, без сюрпризов.',tag:'Демонтаж',s:5},
+{n:'Ольга М.',t:'Брали подсобников на электромонтаж в новостройке. Штробили, тянули кабель, помогали мастеру. Всё чётко.',tag:'Электромонтаж',s:5},
+{n:'Игорь П.',t:'Дорожные работы на участке — плитка и бордюры. Бригада из трёх человек, неделя смен. Всё по графику.',tag:'Дорожные работы',s:5},
+{n:'Марина В.',t:'Оформляли по безналу без НДС для нашего объекта. Документы вовремя, люди выходили каждый день к 8:00.',tag:'Подсобники на стройку',s:5},
+{n:'Сергей Л.',t:'Один разнорабочий не подошёл по задаче — заменили в тот же день, без доплат. Такой подход редкость.',tag:'Демонтаж',s:4}];
+var rmq=document.getElementById('rmq');if(!rmq)return;
+function card(r){var st='';for(var i=0;i<5;i++)st+=i<r.s?'★':'<span style="opacity:.25">★</span>';
+return '<div class="rcard"><div style="color:var(--y);letter-spacing:3px;font-size:15px;margin-bottom:12px">'+st+'</div><p style="color:#d6d6dc;font-size:15px;line-height:1.6">«'+r.t+'»</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:10px"><b>'+r.n+'</b><span style="color:var(--y2);font-size:12px;font-weight:700;text-align:right">'+r.tag+'</span></div></div>';}
+var html=REVIEWS.map(card).join('');
+var track=document.createElement('div');
+track.style.cssText='display:flex;gap:20px;width:max-content;padding:10px 0';
+track.innerHTML=html+html;rmq.appendChild(track);
+function play(){var w=track.scrollWidth/2;if(w>0)track.animate([{transform:'translateX(0)'},{transform:'translateX('+(-w)+'px)'}],{duration:42000,iterations:Infinity});}
+setTimeout(play,600);
+rmq.addEventListener('mouseenter',function(){track.getAnimations().forEach(function(a){a.pause();});});
+rmq.addEventListener('mouseleave',function(){track.getAnimations().forEach(function(a){a.play();});});})();
+/* ===== бегущая строка ===== */
+(function(){var mt=document.getElementById('mtrack');if(mt)mt.innerHTML+=mt.innerHTML;})();
+/* ===== FAQ ===== */
+document.querySelectorAll('.fitem').forEach(function(it){
+it.querySelector('.fq').addEventListener('click',function(){
+var was=it.classList.contains('open')||it.classList.contains('active');
+document.querySelectorAll('.fitem').forEach(function(o){o.classList.remove('open');o.classList.remove('active');var f=o.querySelector('.fa');if(f)f.style.maxHeight='';});
+if(!was){it.classList.add('open');it.classList.add('active');var fa=it.querySelector('.fa');if(fa)fa.style.maxHeight=fa.scrollHeight+'px';}});});
+/* ===== калькулятор ===== */
+var DIRS=[['🔨','Демонтаж'],['🏗️','Подсобники на стройку'],['⚡','Помощь при электромонтаже'],['🧱','Помощь каменщикам'],['🚧','Дорожные работы'],['🧹','Уборка и вывоз мусора'],['💪','Другое']];
+var state={pay:'cash',count:2,days:1,dir:0,total:0,summary:'',lastText:''};
+(function(){var box=document.getElementById('dirChips');
+DIRS.forEach(function(d,i){var b=document.createElement('button');b.type='button';b.className='chip'+(i===0?' active':'');
+b.innerHTML='<span class="ccheck">✓</span>'+d[0]+' '+d[1];
+b.onclick=function(){state.dir=i;box.querySelectorAll('.chip').forEach(function(c,j){c.classList.toggle('active',j===i);});calc();};
+box.appendChild(b);});})();
+function setPay(p){state.pay=p;
+document.getElementById('pillCash').classList.toggle('active',p==='cash');
+document.getElementById('pillCard').classList.toggle('active',p==='card');
+calc();}
+function stepCount(d){state.count=Math.min(CONFIG.maxWorkers,Math.max(1,state.count+d));
+var v=document.getElementById('countVal');v.textContent=state.count;
+v.classList.remove('bump');void v.offsetWidth;v.classList.add('bump');calc();}
+var dr=document.getElementById('daysRange');
+function syncDays(){var v=+dr.value;state.days=v;
+document.getElementById('daysOut').textContent=v+' '+plural(v,['день','дня','дней']);
+dr.style.setProperty('--fill',((v-1)/(CONFIG.maxDays-1)*100)+'%');calc();}
+dr.addEventListener('input',syncDays);
+var curTotal=0;
+function animateTotal(t){var el=document.getElementById('totalSum'),from=curTotal,st=null;
+function step(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/500),e=1-Math.pow(1-p,3);
+el.textContent=fmt(Math.round(from+(t-from)*e));
+if(p<1)requestAnimationFrame(step);else{curTotal=t;el.textContent=fmt(t);}}
+requestAnimationFrame(step);}
+function row(k,v){return '<div class="rline"><span>'+k+'</span><b>'+v+'</b></div>';}
+function calc(){
+var rate=state.pay==='cash'?CONFIG.shiftCash:CONFIG.shiftCard;
+var total=rate*state.count*state.days;
+var payName=state.pay==='cash'?'Наличные':'Безнал · без НДС';
+document.getElementById('details').innerHTML=
+row('Оплата',payName+' — '+fmt(rate)+'/смена')+
+row('Разнорабочие',state.count+' чел.')+
+row('Срок',state.days+' '+plural(state.days,['смена','смены','смен']))+
+row('Направление',DIRS[state.dir][0]+' '+DIRS[state.dir][1])+
+row('Формула',fmt(rate)+' × '+state.count+' чел. × '+state.days+' '+plural(state.days,['смена','смены','смен']));
+animateTotal(total);state.total=total;
+state.summary=payName+'; '+state.count+' разнорабочих, '+state.days+' '+plural(state.days,['смена','смены','смен'])+'; направление: '+DIRS[state.dir][1]+'; предварительно ≈ '+fmt(total);}
+function fillOrder(){document.getElementById('message').value='📋 Расчёт из калькулятора:\n'+state.summary;
+document.getElementById('order').scrollIntoView({behavior:'smooth'});}
+/* ===== Max ===== */
+function sendToMax(text){
+if(!CONFIG.maxBotToken||!CONFIG.maxChatId)return Promise.resolve(false);
+return fetch('https://botapi.max.ru/messages?access_token='+encodeURIComponent(CONFIG.maxBotToken)+'&chat_id='+encodeURIComponent(CONFIG.maxChatId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:text})}).then(function(r){return r.ok;}).catch(function(){return false;});}
+function buildText(n,p,m){return '🔔 Новая заявка с сайта «Сильные Руки»\n\n👤 Имя: '+n+'\n📱 Телефон: '+p+'\n📝 Детали: '+(m||'—');}
+function openMax(){var t=state.lastText||('Здравствуйте! Нужны разнорабочие. '+state.summary);
+try{if(navigator.clipboard)navigator.clipboard.writeText(t);}catch(e){}
+window.open(CONFIG.maxLink,'_blank');}
+function sendOrder(e){e.preventDefault();
+var n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),m=document.getElementById('message').value.trim();
+var text=buildText(n,p,m);state.lastText=text;
+var btn=document.getElementById('submitBtn');btn.disabled=true;btn.textContent='Отправляем…';
+sendToMax(text).then(function(ok){
+document.getElementById('formFields').style.display='none';
+var fo=document.getElementById('formOk');fo.classList.add('show');fo.style.display='block';
+document.getElementById('okText').textContent=ok?'Мы получили её в Max и ответим в течение 10 минут.':'Текст заявки уже скопирован — сейчас откроется Max, просто вставьте его в чат.';
+if(!ok)setTimeout(openMax,900);
+btn.disabled=false;btn.textContent='Отправить заявку';});}
+(function(){var mf=document.getElementById('maxFloat');mf.href=CONFIG.maxLink;mf.target='_blank';})();
+/* ===== лифт-этажи ===== */
+(function(){
+var F=[['.hero',7,'Крыша'],['#services',6,'Услуги'],['#steps',5,'Процесс'],['#calculator',4,'Расчёт'],['#reviews',3,'Отзывы'],['#faq',2,'Вопросы'],['#order',1,'Заявка']];
+var lift=document.createElement('div');lift.className='lift';
+lift.innerHTML='<button class="lift-arr on" id="lUp">▲</button><div class="lift-display" id="lDisp"><span id="lNum">7</span></div><div class="lift-name" id="lName">Крыша</div><div class="lift-shaft"><div class="lift-cab" id="lCab"></div></div><div class="lift-btns" id="lBtns"></div><button class="lift-arr on" id="lDn">▼</button><div class="lift-name" id="lExit" style="cursor:pointer">Выход</div>';
 document.body.appendChild(lift);
-const chip=document.createElement('div');chip.className='fchip';chip.innerHTML='🛗 <b id="chipNum">7 эт.</b> <span id="chipName" style="color:var(--mu)">Крыша</span>';document.body.appendChild(chip);
-F.forEach(f=>{const el=document.querySelector(f[0]);if(!el)return;if(getComputedStyle(el).position==='static')el.style.position='relative';const p=document.createElement('div');p.className='fplate';p.innerHTML='<span class="fn">ЭТАЖ '+f[1]+'</span><span class="fname">'+f[2]+'</span>';el.appendChild(p)});
-const stats=document.querySelector('.hstats');
-if(stats){const hint=document.createElement('div');hint.className='lift-hint';hint.innerHTML='🛗 Сайт устроен как дом — листайте вниз, спускайтесь по этажам <span class="arr">↓</span>';stats.appendChild(hint)}
-const lNum=document.getElementById('lNum'),lName=document.getElementById('lName'),lUp=document.getElementById('lUp'),lDn=document.getElementById('lDn'),lCab=document.getElementById('lCab'),lDisp=document.getElementById('lDisp'),chipNum=document.getElementById('chipNum'),chipName=document.getElementById('chipName'),btns=[...lift.querySelectorAll('.lift-b')];
-btns.forEach(b=>b.addEventListener('click',()=>{const t=document.querySelector(b.dataset.sel);if(t)t.scrollIntoView({behavior:'smooth'})}));
-lDisp.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-let cur=-1,lastY=scrollY,arrT;
-function update(){
-const h=document.documentElement,mid=scrollY+innerHeight*.45;
-let idx=0;
-F.forEach((f,i)=>{const el=document.querySelector(f[0]);if(el&&mid>=el.offsetTop)idx=i});
-const p=Math.min(1,Math.max(0,scrollY/(h.scrollHeight-innerHeight)));
-lCab.style.top=(p*112)+'px';
-const dy=scrollY-lastY;lastY=scrollY;
-if(dy>2){lDn.classList.add('on');lUp.classList.remove('on');clearTimeout(arrT);arrT=setTimeout(()=>lDn.classList.remove('on'),450)}
-else if(dy<-2){lUp.classList.add('on');lDn.classList.remove('on');clearTimeout(arrT);arrT=setTimeout(()=>lUp.classList.remove('on'),450)}
-if(idx!==cur){cur=idx;const f=F[cur];lNum.textContent=f[1];chipNum.textContent=f[1]+' эт.';lDisp.classList.remove('swap');void lDisp.offsetWidth;lDisp.classList.add('swap');btns.forEach((b,i)=>b.classList.toggle('active',i===cur))}
-const label=(scrollY+innerHeight>=h.scrollHeight-100)?'Выход':F[cur<0?0:cur][2];
-if(lName.textContent!==label){lName.textContent=label;chipName.textContent=label}
-}
-window.addEventListener('scroll',update,{passive:true});
-update();
-})();
+var btns=document.getElementById('lBtns'),cur=-1;
+function go(i){var el=document.querySelector(F[i][0]);if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-70,behavior:'smooth'});}
+F.forEach(function(f,i){var b=document.createElement('button');b.type='button';b.className='lift-b';b.textContent=f[1];b.onclick=function(){go(i);};btns.appendChild(b);});
+document.getElementById('lUp').onclick=function(){go(Math.max(0,cur-1));};
+document.getElementById('lDn').onclick=function(){go(Math.min(F.length-1,cur+1));};
+document.getElementById('lDisp').onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};
+document.getElementById('lExit').onclick=function(){window.scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'});};
+var chip=document.createElement('div');chip.className='fchip';
+chip.innerHTML='<b id="chipNum">7</b><span id="chipName">Крыша</span>';
+document.body.appendChild(chip);
+F.forEach(function(f){var el=document.querySelector(f[0]);if(!el)return;
+if(getComputedStyle(el).position==='static')el.style.position='relative';
+var p=document.createElement('div');p.className='fplate';p.textContent='ЭТАЖ '+f[1]+' · '+f[2].toUpperCase();el.appendChild(p);});
+var hs=document.querySelector('.hstats');
+if(hs){var h=document.createElement('div');h.className='lift-hint';h.innerHTML='<span class="hintDn">▼</span> Листайте вниз — 7 этажей';hs.appendChild(h);}
+var lNum=document.getElementById('lNum'),lName=document.getElementById('lName'),lCab=document.getElementById('lCab'),chipNum=document.getElementById('chipNum'),chipName=document.getElementById('chipName'),lDisp=document.getElementById('lDisp');
+var els=F.map(function(f){return document.querySelector(f[0]);});
+function onScroll(){
+var y=window.scrollY+window.innerHeight*.45,idx=0;
+for(var i=0;i<els.length;i++){if(els[i]&&els[i].offsetTop<=y)idx=i;}
+if(idx!==cur){cur=idx;
+lDisp.classList.remove('swap');void lDisp.offsetWidth;lDisp.classList.add('swap');
+lNum.textContent=F[idx][1];lName.textContent=F[idx][2];
+chipNum.textContent=F[idx][1];chipName.textContent=F[idx][2];
+for(var j=0;j<btns.children.length;j++)btns.children[j].classList.toggle('active',j===idx);}
+var max=document.documentElement.scrollHeight-window.innerHeight;
+var p=max>0?Math.min(1,window.scrollY/max):0;
+lCab.style.top=(p*112)+'px';}
+window.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('resize',onScroll);
+onScroll();})();
+/* ===== старт ===== */
+syncDays();
 </script>
 </body>
 </html>
